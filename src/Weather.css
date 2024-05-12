@@ -1,0 +1,18 @@
+.weather{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature{
+    color: #555;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.humidity{
+    color: #555;
+    font-size: 2em;
+    font-weight: bold;
+}
