@@ -7,18 +7,17 @@ function App() {
   const [date, setDate] = useState<string>()
 
   useEffect(() => {
-
-    setInterval(() => {
+    const dateUpdate = setInterval(() => {
       const dateObject = new Date()
 
       const hour = dateObject.getHours()
       const minute = dateObject.getMinutes()
-      const currentTime = hour + ' : ' + minute
+      const currentTime = hour + ' : ' + minute.toString().padStart(2, '0')
 
       setTime(currentTime)
       setDate(dateObject.toDateString())
     }, 1000)
-
+    return () => clearInterval(dateUpdate)
   }, [])
 
   return (
