@@ -5,14 +5,19 @@
     align-items: center;
 }
 
+
 .temperature{
     color: #555;
     font-size: 2em;
     font-weight: bold;
 }
-
-.humidity{
+.weather-state{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #555;
-    font-size: 2em;
-    font-weight: bold;
+}
+
+.weather-state img{
+    width: 3rem;
 }

@@ -12,7 +12,7 @@ function App() {
 
       const hour = dateObject.getHours()
       const minute = dateObject.getMinutes()
-      const currentTime = hour + ' : ' + minute.toString().padStart(2, '0')
+      const currentTime = hour.toString().padStart(2, '0') + ' : ' + minute.toString().padStart(2, '0')
 
       setTime(currentTime)
       setDate(dateObject.toDateString())
